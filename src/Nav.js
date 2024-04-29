@@ -1,5 +1,5 @@
 import  { useEffect } from 'react';
-import './css/Nav.css'; // Import CSS file
+import './css/Nav.css';
 
 function BackgroundUpdater() {
     useEffect(() => {
@@ -9,9 +9,7 @@ function BackgroundUpdater() {
             const bannerImage = document.querySelector('.banner_image');
 
             if (currentTime % 2 === 0) {
-                bannerImage.style.backgroundImage = "url(emo.png)";
-            } else {
-                bannerImage.style.backgroundImage = "url(image.png)";
+               ///
             }
         }
 
@@ -20,9 +18,21 @@ function BackgroundUpdater() {
 
         // Cleanup function to clear interval when component unmounts
         return () => clearInterval(intervalId);
-    }, []); // Empty dependency array to run effect only once on mount
+    }); 
 
-    return null; // Since this component doesn't render anything, return null
+    return (
+    <div className="banner_image">
+    <nav className='navigation'>
+      <ul>
+        <li><a href="#Introduction">PORSCHE</a></li>
+        <li><a href="#MyCars">MY CARS</a></li>
+        <li><a href="#Configure">MY PORSCHE</a></li>
+        <li><a href="#media">MEDIA</a></li>
+        <li><a href="./about.html" target="_blank">About Me</a></li>
+      </ul>
+    </nav>
+    </div>
+); 
 }
 
 export default BackgroundUpdater;

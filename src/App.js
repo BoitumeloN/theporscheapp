@@ -1,4 +1,5 @@
 import './css/App.css';
+import BackgroundUpdater from './Nav';
 
 
 import React, { useState, useEffect } from 'react';
@@ -15,7 +16,7 @@ function App() {
     }, []);
 
     function getTitle() {
-        return currentDate.getSeconds() % 2 === 0 ? "SCUDERIA" : "PORSCHE";
+        return currentDate.getMinutes() % 2 === 0 ? "SCUDERIA" : "PORSCHE";
     }
 
     return (
@@ -24,7 +25,10 @@ function App() {
                 <img src="images/german_flag.png" className="country-img" alt="German Flag" />  
                 {getTitle()}
             </h1>
+        <BackgroundUpdater/>    
         </div>
+
+  
     );
 }
 
