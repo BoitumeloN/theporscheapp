@@ -30,6 +30,7 @@ background-color: black;
 #introduction {
 text-align: center;
 }
+
 /*
 .banner_image {
   background-position: center;
@@ -73,13 +74,12 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 .top_4 img {
-width: 80%;
-height: 600px;
+width: 100%;
+height: 700px;
 background-position: center;
 margin-left: auto;
 margin-right: auto;
 display: block;
-border-radius: 10px;
 margin-bottom: 50px;
 }
 
@@ -135,6 +135,7 @@ padding-top: 10px;
 padding-bottom: 10px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 #media video {
 width: 100%; 

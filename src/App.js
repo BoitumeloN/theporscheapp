@@ -16,7 +16,7 @@ function App() {
     }, []);
 
     function getTitle() {
-        return currentDate.getMinutes() % 2 === 0 ? "SCUDERIA" : "PORSCHE";
+        return currentDate.getHours() % 2 === 0 ? "911" : "PORSCHE";
     }
 
     return (
@@ -27,7 +27,6 @@ function App() {
             </h1>
         <BackgroundUpdater/>    
         </div>
-
   
     );
 }
