@@ -5,14 +5,11 @@ import banner2 from './images/gt3rs_2.jpg';
 import banner3 from './images/gt3rs_3.jpg';
 import banner4 from './images/gt3rs.jpg';
 
-
-
 function BackgroundUpdater() {
 
     const [bannerIndex, setBannerIndex] = useState(0);
     const banners = [banner1, banner2, banner3,banner4];
   
-
     useEffect(() => {
         const interval = setInterval(() => {
           // Update bannerIndex to show the next image

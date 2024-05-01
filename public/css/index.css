@@ -63,6 +63,26 @@ transition: transform .6s cubic-bezier(.35,0,0,1);
 
 }
 
+.dls-title {
+  font-size: 8rem;
+  font-weight: 300;
+  line-height: 7.75rem;
+  color: beige;
+  opacity: 0.6;
+  
+}
+
+.big-text {
+  width: 50%;
+}
+
+.buttonscontainer {
+  height: 70px;
+  position: absolute;
+  bottom: 40px;
+  
+}
+
 .top-four-cars h2{
 text-align: center;
 padding-top: 10px;
@@ -71,29 +91,30 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 color: white;
 } 
 
-.blob{
-  color: white;
-  border: 2px solid white;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-right: 5px;
-  position: absolute;
-  bottom: 40px;
-  margin-left: 20px
+#porsche-2 h2 {
+  opacity: 0.7;
+  margin-bottom: 10px;
 }
 
-.blib{
+.information-i {
   color: white;
   border: 2px solid white;
   padding: 20px 20px;
   text-decoration: none;
-  transition: transform .6s cubic-bezier(.35,0,0,1);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+  
+}
+
+.information-ii {
+  color: white;
+  border: 2px solid white;
+  padding: 20px 20px;
+  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(37, 157, 157);
-  margin-left: 180px;
-  position: absolute;
-  bottom: 40px
+  margin-left: 10px;
+  
 }
 
 a {
@@ -113,8 +134,6 @@ background-image: url(../images/singer_1.jpg);
 width: 100%;
 height: 700px;
 background-size: cover;
-
-
 }
 
 .config_banner a {
@@ -122,7 +141,6 @@ text-decoration: none;
 text-align: center;
 width: 200px;
 opacity: 0.7;
-
 }
 
 
@@ -147,4 +165,63 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 #media video {
 width: 100%; 
 max-height: 100vh;
+position: relative;
+}
+
+.container {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.top-left a {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  border: 2px solid black;
+  color:white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white
+}
+
+
+.top-right a {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.center h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.6;
+  font-size: 10rem;
+  transform: translate(-50%, -50%);
+}
+
+.container-2 {
+  position: relative;
+}
+
+.container-2 .bottom-right {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  
+}
+
+.bottom-right a{
+  border: 2px solid white;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
