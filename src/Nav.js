@@ -11,6 +11,7 @@ function BackgroundUpdater() {
 
     const [bannerIndex, setBannerIndex] = useState(0);
     const banners = [banner1, banner2, banner3,banner4];
+  
 
     useEffect(() => {
         const interval = setInterval(() => {
