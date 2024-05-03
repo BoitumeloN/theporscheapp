@@ -1,36 +1,60 @@
-.navigation ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-.navigation li {
-    /* font-weight: 500; */
-    letter-spacing: 2px;
-    padding: 20px;
-    font-style: normal;
-    font-weight: bold;
-    color:white;
-    padding-bottom: 95px;
-    
-}
 
 .banner_image {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 700px;
-    background-repeat: no-repeat;
+    height: 800px;
+    background-repeat: repeat;
+    position: relative;
 } 
 
-.navigation a {
+.navigation-options a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
-    border: 3px solid black;
     padding: 10px 20px;
-    opacity: 0.8;
+    opacity: 1;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5rem;
+    
 }
 
+.navigation-options a:hover {
+    background-color: pink;
+}
 
+.navigation-options{
+    position: relative;
+} 
 
- 
+.banner-info {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 10px;
+    top: 500px;
+}
+.banner-info .banner-intro {
+    
+    position: absolute;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
+    font-size: 60px; 
+    opacity: 0.7;
+    line-height: 100px;
+}
+
+.banner-info .name {
+    
+    position: absolute;
+    color:white;
+    font-weight: 700;
+    font-family: bmwTypeNextWeb,Arial,Helvetica,Roboto,sans-serif;
+    font-size: 140px;
+    opacity: 0.7;
+    line-height: 300px;
+  }
+  
+

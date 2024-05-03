@@ -1,4 +1,5 @@
 import './css/Nav.css';
+import './css/App.css';
 import { useState,useEffect } from 'react';
 import banner1 from './images/gt3rs_1.jpg';
 import banner2 from './images/gt3rs_2.jpg';
@@ -11,27 +12,35 @@ function BackgroundUpdater() {
     const banners = [banner1, banner2, banner3,banner4];
   
     useEffect(() => {
-        const interval = setInterval(() => {
-          // Update bannerIndex to show the next image
-          setBannerIndex((prevIndex) => (prevIndex + 1) % banners.length);
-        }, 5000); // Change image every 5 seconds
+        const interval = setInterval(() => { setBannerIndex((prevIndex) => (prevIndex + 1) % banners.length);}, 5000); 
     
-        return () => clearInterval(interval); // Cleanup function to clear the interval
+        return () => clearInterval(interval);
       }, [banners.length]);
 
     return (
+    
     <div className="banner_image" style={{ backgroundImage: `url(${banners[bannerIndex]})` }}>
-        <nav className='navigation'>    
-        <ul>
-            <li><a href="#Introduction">PORSCHE</a></li>
-            <li><a href="#MyCars">MY CARS</a></li>
-            <li><a href="#Configure">MY PORSCHE</a></li>
-            <li><a href="#media">MEDIA</a></li>
-            <li><a href="./about.html" target="_blank">About Me</a></li>
-        </ul>
-        </nav>
+        <div className= "title">
+            <h1>PORSCHE</h1>
+            <img src="images/german_flag.png" className="country-img" alt="German Flag"/>      
+        </div>      
+        <div className='navigation-options'>
+                <a href="#Introduction">PORSCHE</a>
+                <a href="#MyCars">MY CARS</a>
+                <a href="#Configure">MY PORSCHE</a>
+                <a href="#media">MEDIA</a>
+                <a href="./about.html" target="_blank">ABOUT ME</a>
+        </div>
+        <div class="banner-info">
+            <div class="banner-name-intro">
+                <div class="banner-intro">THE NEW</div>
+            </div>
+            <div class="banner-name">
+                <div class="name">911 GT3RS</div>
+            </div>
+        </div>
     </div>
     ); 
 }
 
-export default BackgroundUpdater;
+export default BackgroundUpdater;   
